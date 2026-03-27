@@ -82,6 +82,7 @@ import {
 } from 'recharts';
 import { handleFirestoreError, OperationType, testConnection } from './lib/firestore';
 import { pcmToWav } from './lib/audio';
+import Background3D from './components/Background3D';
 
 // --- Error Boundary ---
 
@@ -2480,6 +2481,7 @@ export default function App() {
         "min-h-screen transition-colors duration-500",
         isDarkMode ? "bg-[#0f172a] text-white" : "bg-indigo-50 text-slate-900"
       )}>
+        <Background3D />
         {/* Navbar */}
         <nav className="fixed top-0 w-full z-50 px-6 py-4">
           <div className="max-w-7xl mx-auto flex items-center justify-between bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl px-6 py-3">

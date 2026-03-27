@@ -16,7 +16,7 @@ export async function getChatResponse(
   ];
 
   const result = await ai.models.generateContent({
-    model: "gemini-3-flash-preview",
+    model: "gemini-2.5-flash",
     contents: contents,
     config: {
       systemInstruction: `You are a supportive, empathetic, and professional mental health AI assistant for college students. 
